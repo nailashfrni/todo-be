@@ -16,7 +16,7 @@ def getTodo(request):
 @api_view(['GET'])
 def getHTMLTodo(request):
     '''Get all todos'''
-    return render(request, "home.html", context={})
+    return render(request, "index.html", context={})
 
 @api_view(['POST'])
 def createTodo(request):
