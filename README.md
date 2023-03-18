@@ -1,5 +1,5 @@
 # Tugas Oprec FUKI 2023
-TodoApp Backend using Django REST Framework
+Todolist Backend App using Django REST Framework
 <br>
 
 ## Disclaimer
