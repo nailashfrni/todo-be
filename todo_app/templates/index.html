@@ -7,51 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To-Do List</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <link href="https://fonts.cdnfonts.com/css/carrois-gothic-sc" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
         <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
-        <style>
-            a {
-                text-decoration: none;
-            } .brand {
-                font-family: 'Carrois Gothic SC', sans-serif;
-            } .indigo {
-                color: #8715E1;
-            } .small-text {
-                font-family: 'DM Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 18px;
-            } .grand-title {
-                font-family: 'DM Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 48px;
-                line-height: 54px;
-            } .card {
-                width: 335px;
-                height: 136px;
-
-                /* Indigo/20 */
-                background: #DBD1EC;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 20px;
-            } .card-header {
-                font-family: 'DM Sans';
-                /* font-style: normal; */
-                font-weight: 700;
-                font-size: 16px;
-                /* line-height: 21px; */
-            }
-        </style>
     </head>
     <body>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
             <a class="navbar-brand indigo">Todooo</a>
-            <button class="btn btn-outline-success primary-button">Create Task</button>
+            <button type="button" class="indigo-button medium-text" data-bs-toggle="modal" data-bs-target="#createModal">Create Task</button>
             </div>
         </nav>
         <div class="container header-section text-center my-4">
@@ -61,18 +26,52 @@
             <div class="my-4 small-text">
                 You have <a class="indigo" id="complete">3</a> completed tasks and <a class="indigo" id="incomplete">1</a> incompleted tasks
             </div>
-            <button class="btn btn-outline-success primary-button">Create Task</button>
+            <button type="button" class="indigo-button medium-text" data-bs-toggle="modal" data-bs-target="#createModal">Create Task</button>
         </div>
         <div class="container tasks">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <div class="m-0 card-header">Card title</div>
-                  <div class="m-2 small-text">Card subtitle</div>
-                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a> -->
+            <div class="row rows-cols-1 row-cols-md-3 g-4 justify-content-center">
+                <div class="card indigo-popup" style="width: 18rem;">
+                    <div class="card-body-setup">
+                      <div class="row">
+                        <div class="col-7">
+                            <div class="card-header-me">Kerjain basdat</div>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="small-text indigo">INCOMPLETE</a>
+                        </div>
+                      </div>
+                      <div class="mt-1 small-text" id="status-1">TK2 udah muncul aje bro</div>
+                      <div class="row row-card-end d-flex justify-content-between">
+                        <div class="col-9 align-self-end">
+                            <p></p>
+                            <p class="small-text text-muted">2023-04-19</p>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="{% static 'icons/trash.png' %}" alt="Delete"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content indigo-popup">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between modal-header-margin">
+                            <h1 class="fs-5 card-header-me" id="createModalLabel">Create New Task</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <input class="input-pretty" type="text" placeholder="Name"><br>
+                        <textarea class="input-pretty" name="description" id="description" rows="3" placeholder="Description"></textarea>
+                        <div class="d-flex justify-content-end margin-footer">
+                            <button type="button" class="indigo-button">Save</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                </div>
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>

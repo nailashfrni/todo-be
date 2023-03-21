@@ -1,0 +1,86 @@
+a {
+    text-decoration: none;
+} .brand {
+    font-family: 'Carrois Gothic SC', sans-serif;
+} .indigo {
+    color: #8715E1;
+} .small-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+} .grand-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+} .card {
+    width: 335px;
+    height: 136px;
+} .indigo-popup {
+    background: #DBD1EC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 424px;
+} .card-header-me {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+} .card-body-setup {
+    padding: 10px;
+    padding-top: 17px;
+} .row-card-end {
+    margin-top: 20px;
+}
+.text-muted {
+    color: rgba(80, 62, 83, 0.81);
+} .medium-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.indigo-button {
+    width: 106px;
+    height: 32px;
+    background: #8715E1;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #8715E1;;
+    border-style: solid;
+} .indigo-button:hover {
+    background: #63159f;
+    border-color: #63159f;;
+} .input-pretty {
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 335px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    margin: 27px;
+    margin-top: 0px;
+    padding: 11px;
+}.modal-header-margin {
+    margin: 27px;
+} ::placeholder {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(80, 62, 83, 0.81);
+} input[type="text"], textarea {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+} .margin-footer {
+    margin-right: 27px;
+    margin-bottom: 20px;
+}
