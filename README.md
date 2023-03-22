@@ -3,7 +3,7 @@ Todolist App using Django REST Framework
 <br>
 
 ## Deployment
-
+[https://todo-be-production-5000.up.railway.app/](https://todo-be-production-5000.up.railway.app/)
 
 ## How to Run the App on Your Local Computer
 
