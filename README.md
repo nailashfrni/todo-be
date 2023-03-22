@@ -1,10 +1,6 @@
 # Tugas Oprec FUKI 2023
-Todolist Backend App using Django REST Framework
+Todolist App using Django REST Framework
 <br>
-
-## Disclaimer
-> Aplikasi ini baru berisi API saja, User Interface masih dalam proses pembuatan
-
 
 ## How to Run the App
 

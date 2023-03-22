@@ -35,8 +35,7 @@ a {
     padding-top: 17px;
 } .row-card-end {
     margin-top: 20px;
-}
-.text-muted {
+} .text-muted {
     color: rgba(80, 62, 83, 0.81);
 } .medium-text {
     font-family: 'DM Sans';
@@ -44,8 +43,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-}
-.indigo-button {
+} .indigo-button {
     width: 106px;
     height: 32px;
     background: #8715E1;
@@ -65,7 +63,7 @@ a {
     margin: 27px;
     margin-top: 0px;
     padding: 11px;
-}.modal-header-margin {
+} .modal-header-margin {
     margin: 27px;
 } ::placeholder {
     font-family: 'DM Sans';
