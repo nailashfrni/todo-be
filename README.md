@@ -2,7 +2,10 @@
 Todolist App using Django REST Framework
 <br>
 
-## How to Run the App
+## Deployment
+
+
+## How to Run the App on Your Local Computer
 
 1. Clone repository ini pada local dengan command 
     
@@ -21,7 +24,13 @@ Todolist App using Django REST Framework
     
         pip install -r requirements.txt
 
-4. Jalankan server dengan perintah
+4. Jalankan perintah untuk migrasi model ke database lokal sebagai berikut.
+
+        python manage.py makemigrations
+        python manage.py migrate
+
+
+5. Jalankan server dengan perintah
         
         python manage.py runserver
 
